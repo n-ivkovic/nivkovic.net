@@ -1,6 +1,8 @@
 @font-face {
 	font-family: "Liberation Sans";
-	src: local("Liberation Sans"), local("Liberation Sans Regular"), url("../res/font/LiberationSans-Regular.ttf");
+	src: local("Liberation Sans"),
+		local("Liberation Sans Regular"),
+		url("../res/font/LiberationSans-Regular.ttf") format("ttf");
 	font-weight: normal;
 }
 
