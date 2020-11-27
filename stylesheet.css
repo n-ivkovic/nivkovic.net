@@ -135,6 +135,7 @@ code {
 	font-family: "Liberation Mono", "Lucida Console", monospace;
 }
 pre {
+	overflow: auto;
 	border: 1px solid;
 	padding: 1em;
 }
