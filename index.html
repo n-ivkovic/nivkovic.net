@@ -12,7 +12,180 @@
 
 	<link rel="canonical" href="https://nivkovic.net">
 	<link rel="shortcut icon" href="res/img/me.ico">
-	<link rel="stylesheet" href="stylesheet.css">
+
+	<style>
+		/* Font Squirrel */
+		@font-face {
+			font-family: "Liberation Sans";
+			src: url("res/font/LiberationSans-Regular.eot");
+			src: local("Liberation Sans"),
+				url("res/font/LiberationSans-Regular.eot?#iefix") format("embedded-opentype"),
+				url("res/font/LiberationSans-Regular.woff2") format("woff2"),
+				url("res/font/LiberationSans-Regular.woff") format("woff"),
+				url("res/font/LiberationSans-Regular.ttf") format("truetype"),
+				url("res/font/LiberationSans-Regular.svg#liberation_sansregular") format("svg");
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: "Liberation Mono";
+			src: url("res/font/LiberationMono-Regular.eot");
+			src: local("Liberation Mono"),
+				url("res/font/LiberationMono-Regular.eot?#iefix") format("embedded-opentype"),
+				url("res/font/LiberationMono-Regular.woff2") format("woff2"),
+				url("res/font/LiberationMono-Regular.woff") format("woff"),
+				url("res/font/LiberationMono-Regular.ttf") format("truetype"),
+				url("res/font/LiberationMono-Regular.svg#liberation_monoregular") format("svg");
+			font-weight: normal;
+			font-style: normal;
+		}
+		 
+		/* IcoMoon */
+		@font-face {
+			font-family: "IcoMoon";
+			src: url("res/font/icomoon.eot");
+			src: url("res/font/icomoon.eot#iefix") format("embedded-opentype"),
+				url("res/font/icomoon.woff") format("woff"),
+				url("res/font/icomoon.ttf") format("truetype"),
+				url("res/font/icomoon.svg#icomoon") format("svg");
+			font-weight: normal;
+			font-style: normal;
+			font-display: block;
+		}
+		[class^="icon-"], [class*=" icon-"] {
+			font-family: "IcoMoon" !important;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			padding-right: 0.25em;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		.icon-github:before {
+		  content: "\E900";
+		}
+		.icon-gitlab:before {
+		  content: "\E901";
+		}
+		.icon-twitter:before {
+		  content: "\E902";
+		}
+		.icon-reddit:before {
+		  content: "\E903";
+		}
+
+		/* nivkovic */
+		html {
+			font-family: "Liberation Sans", "Arial", sans-serif;
+			font-size: 1.05em;
+			text-align: center;
+		}
+		body {
+			margin: 1em auto;
+			text-align: left;
+		}
+		#header, #footer {
+			margin: 1em 0;
+			text-align: center;
+		}
+		#header h1 {
+			line-height: 85%;
+		}
+		#header ul {
+			margin: 0.5em 0 0 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		#header ul li {
+			display: inline;
+			margin: 0 0.5em;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			margin-bottom: 0.1em;
+			font-weight: bold;
+			line-height: 115%;
+		}
+		h1 {
+			font-size: 2.75em;
+		}
+		h6, code, #footer {
+			font-size: 0.875em;
+		}
+		a:link, a:visited {
+			margin-bottom: 0.15em;
+			border-width: 0.05em;
+			border-bottom-style: solid;
+			text-decoration: none;
+		}
+		a:hover, a:active {
+			margin-bottom: 0em;
+			border-width: 0.2em;
+			border-bottom-style: solid;
+		}
+		p, li, th, td {
+			line-height: 150%;
+		}
+		p, table {
+			margin: 1.25em 0;
+		}
+		ul, ol {
+			padding: 0 0 0 1.25em;
+		}
+		ul {
+			list-style-type: disc;
+		}
+		hr {
+			border-width: 1px;
+			border-style: solid;
+			margin: 1em 0;
+		}
+		code {
+			font-family: "Liberation Mono", "Lucida Console", monospace;
+		}
+		pre {
+			overflow: auto;
+			border: 1px solid;
+			padding: 1em;
+		}
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 8px;
+		}
+		@media screen and (max-width: 900px) {
+			body {
+				width: 90%;
+			}
+		}
+		@media screen and (min-width: 900px) {
+			body {
+				width: 810px;
+			}
+		}
+		/* nivkovic colours */
+		html {
+			background-color: #000000;
+		}
+		html, a:link, a:visited, h1, h2, h3, h4, h5, h6 {
+			color: #D9D9DA; 
+		}
+		a:hover, a:active {
+			color: #F9F9FA;
+		}
+		a:link, a:visited {
+			border-color: #D9D9DA; 
+		}
+		a:hover, a:active {
+			border-color: #F9F9FA;
+		}
+		hr, table, tr, td, th, pre, blockquote {
+			border-color: #39393A;
+		}
+	</style>
+
 </head>
 <body>
 	<div id="header" role="banner">
@@ -44,8 +217,8 @@
 		</p>
 		<p>
 			My PGP key (<a href="nivkovic.pgp">download</a>):
-			<pre><code>DDCA 3944 744D 1DAD B95D A8ED 4328 66D2 698B 81B4</code></pre>
 		</p>
+		<pre><code>DDCA 3944 744D 1DAD B95D A8ED 4328 66D2 698B 81B4</code></pre>
 	</div>
 	<!-- /#main -->
 </body>
