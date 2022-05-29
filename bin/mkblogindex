@@ -50,9 +50,6 @@ footer="${1}/_index_footer.md"
 
 paths="$(find "$1" -type f -name '*.md' ! -name '_*' ! -name 'index.md')"
 
-#printf "Current path: %s\n" "$(pwd)" >&2
-#printf "awk info: %s\n" "$(awk --help)" >&2
-
 if [ -n "$paths" ]; then
 	year=32768
 	echo "$paths" | while read -r path; do
@@ -63,7 +60,6 @@ if [ -n "$paths" ]; then
 		post_url="$(basename "$post_path" | sed -e 's/\.md$//')"
 		post_title="$(sed -n -e 's/ \{0,3\}#\{1,6\} *//' -e '1p' "$post_path")"
 		post_year="$(echo "$post" | awk -F ':' '{ sub(/(-[0-9]{2}){2}$/, "", $1); print $1 }')"
-		#printf "%s: %s\n" "$post" "$post_year" >&2
 		[ "$post_year" -lt "$year" ] && {
 			year="$post_year"
 			echo
