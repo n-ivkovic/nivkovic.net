@@ -1,11 +1,14 @@
 pages:
+  image: debian:stable-slim
   stage: deploy
+  before_script:
+    - apt-get update
+    - apt-get install -y make lowdown
   script:
-  - mkdir .public
-  - cp -r * .public/
-  - mv .public/ public/
+    - make clean
+    - make
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
