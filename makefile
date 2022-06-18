@@ -23,7 +23,7 @@ $(BLOGINDEX):
 	./bin/mkblogindex $(BLOGSRC) > $(BLOGINDEX)
 
 clean:
-	rm -rf $(DST)
+	rm -rf $(DST) $(BLOGINDEX)
 
 help:
 	@echo

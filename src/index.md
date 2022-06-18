@@ -1,10 +1,11 @@
 ![Me](./res/img/me.jpg)
 
-Hello!
-I'm currently employed as a web developer, but have previous experience in application support development and system administration on RHEL systems.
+Hello, I write code for the web and \*nix.
+
+I'm currently employed as a web developer. I have previously worked as an application support developer and had some experience in system administration.
 Check out further details about my career on [LinkedIn](https://www.linkedin.com/in/nicholas-ivkovic).
 
-For my personal projects, I usually write F/OSS for \*nix and the web.
+For my personal projects I write F/OSS for \*nix and a bit the web.
 I have a bad habit of starting many projects but never completing most of them.
 Check out the ones I have completed on [GitHub](https://www.github.com/n-ivkovic) and [GitLab](https://www.gitlab.com/n-ivkovic).
 
